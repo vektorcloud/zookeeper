@@ -12,7 +12,7 @@ done
 echo "$cfg" >> /opt/exhibitor/exhibitor.conf
 echo "${MYID:=1}" > "$ZOOKEEPER_dataDir/myid"
 
-if [ -n "$WITH_EXHIBITOR"] ; then
+if [ -n "$WITH_EXHIBITOR" ] ; then
   java -jar /opt/exhibitor/exhibitor.jar --port 8080 --defaultconfig /opt/exhibitor/exhibitor.conf --configtype file --fsconfigdir /opt/zookeeper/conf
 else 
   exec "$@"
