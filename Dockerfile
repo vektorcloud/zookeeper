@@ -40,4 +40,3 @@ VOLUME ["$ZOOKEEPER_dataDir"]
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["zkServer.sh", "start-foreground"]
