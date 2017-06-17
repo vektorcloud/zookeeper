@@ -3,7 +3,7 @@ FROM quay.io/vektorcloud/maven:latest
 RUN apk --no-cache add bash && \
     apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community add dumb-init
 
-RUN VERSION="3.4.9" && \
+RUN VERSION="3.4.10" && \
   PACKAGE="zookeeper-$VERSION.tar.gz" && \
   wget "http://www-us.apache.org/dist/zookeeper/zookeeper-$VERSION/$PACKAGE" -O "/tmp/$PACKAGE" && \
   wget "http://www-us.apache.org/dist/zookeeper/zookeeper-$VERSION/$PACKAGE.md5" -O "/tmp/$PACKAGE.md5" && \
