@@ -1,6 +1,6 @@
 # Tiny Apache Zookeeper
 
-![circleci][circleci]
+[![circleci][circleci]](https://circleci.com/gh/vektorcloud/zookeeper)
 
 Tiny [Apache Zookeeper](http://zookeeper.apache.com) Docker image
 
